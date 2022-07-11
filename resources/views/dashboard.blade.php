@@ -41,7 +41,7 @@
     <link href="{{asset('style/css/slick.css')}}" rel="stylesheet" />
 
     <!-- Main CSS-->
-    <link href="{{asset('style/css/theme.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('style/css/theme.css')}}" rel="stylesheet" />
     <link href="{{ asset('style/css/main.css')}}" rel="stylesheet" />
 
 
@@ -804,8 +804,7 @@
     <script src="{{asset('style/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">
     </script>
     <script src="{{asset('style/vendor/counter-up/jquery.waypoints.min.js')}}"></script>
-    <script src="{{asset('style/vendor/counter-up/jquery.counterup.min.js')}}">
-    </script>
+    <script src="{{asset('style/vendor/counter-up/jquery.counterup.min.js')}}"></script>
     <script src="{{asset('style/vendor/circle-progress/circle-progress.min.js')}}"></script>
     <script src="{{asset('style/vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
     <script src="{{asset('style/vendor/chartjs/Chart.bundle.min.js')}}"></script>

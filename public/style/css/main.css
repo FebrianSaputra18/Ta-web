@@ -300,7 +300,7 @@ p {
   padding: 50px 0 0 0;
 }
 .navbar-light .navbar-brand {
-  margin-right: 10%;
+  justify-content: center;
 }
 .nav-item {
   padding: 0 10px;
@@ -564,9 +564,7 @@ textarea {
 footer {
   background-color: #314584;
   width: 100%;
-  min-height: 400px;
   text-align: center;
-  padding: 70px 0px 0px 0px;
 }
 footer h5{
   color: #fff;
@@ -596,6 +594,21 @@ footer h6 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
+.ic-nav li {
+  display: inline;
+}
+.ic-nav li a {
+  font-size: 1.7rem;
+  color: #314584;
+  margin: 0px 30px;
+  margin-bottom: 0%
+}
+.ic-nav li a:hover {
+  color: #FF3946;
+  transition: all 0.3s ease;
+}
+
 .social li {
   display: inline;
 }

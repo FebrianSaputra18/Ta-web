@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::post('/postlogin', 'FormLoginController@postlogin')->name('postlogin');
+Route::post('/postlogin', 'FormLoginController@postlogin')->name('dashboardadmin');
 
 Route::get('login', function (Request $request) {
     $type = $request->type;
@@ -28,4 +28,8 @@ Route::get('login', function (Request $request) {
 
 Route::get('dashboard', function () {
     return view('dashboard');
+});
+
+Route::get('admin-dashboard', function () {
+    return view('dashboardadmin');
 });
