@@ -421,7 +421,7 @@
                     type=3
                     break;
             }
-            logUrl.href = '/login/?type='+type;
+            logUrl.href = '/login?type='+type;
             console.log(text);
         }
 

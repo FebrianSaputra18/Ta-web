@@ -19,12 +19,12 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::post('/postlogin', 'FormLoginController@postlogin')->name('dashboardadmin');
+// Route::post('/postlogin', 'FormLoginController@postlogin')->name('dashboardadmin');
 
-Route::get('login', function (Request $request) {
-    $type = $request->type;
-    return view('formlogin', compact('type'));
-});
+// Route::get('/login', function (Request $request) {
+//     $type = $request->type;
+//     return view('auth.login', compact('type'));
+// });
 
 Route::get('dashboard', function () {
     return view('dashboard');
