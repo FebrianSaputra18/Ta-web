@@ -18,6 +18,9 @@
     <link href="{{asset('style/vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
     <link href="{{asset('style/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet"
         media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap CSS-->
     <link href="{{asset('style/vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
@@ -177,217 +180,62 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h3 class="title-5 m-b-35">data table</h3>
-                        <div class="table-data__tool">
-                            <div class="table-data__tool-left">
-                                <div class="rs-select2--light rs-select2--md">
-                                    <select class="js-select2" name="property">
-                                        <option selected="selected">All Properties</option>
-                                        <option value="">Option 1</option>
-                                        <option value="">Option 2</option>
-                                    </select>
-                                    <div class="dropDownSelect2"></div>
+                        <div class="col-12 d-flex justify-content-lg-center border my-2 py-4">
+                            <div class="col-12">
+                                <div class="row justify-content-between">
+                                    <div class="card mr-3" style="width: 14rem;">
+                                        <img src="{{ asset('style/images/profil_img.jpg') }}" class="card-img-top"
+                                            alt="Syamsul">
+                                        <div class="card-body align-self-center">
+                                            <h5 class="card-title">Syamsul Saqok.</h5>
+                                            <p class="card-text">087788XXXX.</p>
+                                            <a href="#" class="btn btn-primary">Lihat Data Diri</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mr-3" style="width: 14rem;">
+                                        <img src="{{ asset('style/images/profil_img.jpg') }}" class="card-img-top"
+                                            alt="Syamsul">
+                                        <div class="card-body align-self-center">
+                                            <h5 class="card-title">Syamsul Saqok.</h5>
+                                            <p class="card-text">087788XXXX.</p>
+                                            <a href="#" class="btn btn-primary">Lihat Data Diri</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mr-3" style="width: 14rem;">
+                                        <img src="{{ asset('style/images/profil_img.jpg') }}" class="card-img-top"
+                                            alt="Syamsul">
+                                        <div class="card-body align-self-center">
+                                            <h5 class="card-title">Syamsul Saqok.</h5>
+                                            <p class="card-text">087788XXXX.</p>
+                                            <a href="#" class="btn btn-primary">Lihat Data Diri</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mr-3" style="width: 14rem;">
+                                        <img src="{{ asset('style/images/profil_img.jpg') }}" class="card-img-top"
+                                            alt="Syamsul">
+                                        <div class="card-body align-self-center">
+                                            <h5 class="card-title">Syamsul Saqok.</h5>
+                                            <p class="card-text">087788XXXX.</p>
+                                            <a href="#" class="btn btn-primary">Lihat Data Diri</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mr-3" style="width: 14rem;">
+                                        <img src="{{ asset('style/images/profil_img.jpg') }}" class="card-img-top"
+                                            alt="Syamsul">
+                                        <div class="card-body align-self-center">
+                                            <h5 class="card-title">Syamsul Saqok.</h5>
+                                            <p class="card-text">087788XXXX.</p>
+                                            <a href="#" class="btn btn-primary">Lihat Data Diri</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="rs-select2--light rs-select2--sm">
-                                    <select class="js-select2" name="time">
-                                        <option selected="selected">Today</option>
-                                        <option value="">3 Days</option>
-                                        <option value="">1 Week</option>
-                                    </select>
-                                    <div class="dropDownSelect2"></div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-success"><i class="fa-solid fa-plus mr-2"
+                                            data-toggle="modal" data-target="#addsales"></i>Tambah
+                                        Sales</button>
                                 </div>
-                                <button class="au-btn-filter">
-                                    <i class="zmdi zmdi-filter-list"></i>filters</button>
                             </div>
-                            <div class="table-data__tool-right">
-                                <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                    <i class="zmdi zmdi-plus"></i>add item</button>
-                                <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
-                                    <select class="js-select2" name="type">
-                                        <option selected="selected">Export</option>
-                                        <option value="">Option 1</option>
-                                        <option value="">Option 2</option>
-                                    </select>
-                                    <div class="dropDownSelect2"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table-responsive table-responsive-data2">
-                            <table class="table table-data2">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <label class="au-checkbox">
-                                                <input type="checkbox">
-                                                <span class="au-checkmark"></span>
-                                            </label>
-                                        </th>
-                                        <th>name</th>
-                                        <th>email</th>
-                                        <th>description</th>
-                                        <th>date</th>
-                                        <th>status</th>
-                                        <th>price</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="tr-shadow">
-                                        <td>
-                                            <label class="au-checkbox">
-                                                <input type="checkbox">
-                                                <span class="au-checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>Lori Lynch</td>
-                                        <td>
-                                            <span class="block-email">lori@example.com</span>
-                                        </td>
-                                        <td class="desc">Samsung S8 Black</td>
-                                        <td>2018-09-27 02:12</td>
-                                        <td>
-                                            <span class="status--process">Processed</span>
-                                        </td>
-                                        <td>$679.00</td>
-                                        <td>
-                                            <div class="table-data-feature">
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Send">
-                                                    <i class="zmdi zmdi-mail-send"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Edit">
-                                                    <i class="zmdi zmdi-edit"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Delete">
-                                                    <i class="zmdi zmdi-delete"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="More">
-                                                    <i class="zmdi zmdi-more"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="spacer"></tr>
-                                    <tr class="tr-shadow">
-                                        <td>
-                                            <label class="au-checkbox">
-                                                <input type="checkbox">
-                                                <span class="au-checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>Lori Lynch</td>
-                                        <td>
-                                            <span class="block-email">john@example.com</span>
-                                        </td>
-                                        <td class="desc">iPhone X 64Gb Grey</td>
-                                        <td>2018-09-29 05:57</td>
-                                        <td>
-                                            <span class="status--process">Processed</span>
-                                        </td>
-                                        <td>$999.00</td>
-                                        <td>
-                                            <div class="table-data-feature">
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Send">
-                                                    <i class="zmdi zmdi-mail-send"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Edit">
-                                                    <i class="zmdi zmdi-edit"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Delete">
-                                                    <i class="zmdi zmdi-delete"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="More">
-                                                    <i class="zmdi zmdi-more"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="spacer"></tr>
-                                    <tr class="tr-shadow">
-                                        <td>
-                                            <label class="au-checkbox">
-                                                <input type="checkbox">
-                                                <span class="au-checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>Lori Lynch</td>
-                                        <td>
-                                            <span class="block-email">lyn@example.com</span>
-                                        </td>
-                                        <td class="desc">iPhone X 256Gb Black</td>
-                                        <td>2018-09-25 19:03</td>
-                                        <td>
-                                            <span class="status--denied">Denied</span>
-                                        </td>
-                                        <td>$1199.00</td>
-                                        <td>
-                                            <div class="table-data-feature">
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Send">
-                                                    <i class="zmdi zmdi-mail-send"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Edit">
-                                                    <i class="zmdi zmdi-edit"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Delete">
-                                                    <i class="zmdi zmdi-delete"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="More">
-                                                    <i class="zmdi zmdi-more"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="spacer"></tr>
-                                    <tr class="tr-shadow">
-                                        <td>
-                                            <label class="au-checkbox">
-                                                <input type="checkbox">
-                                                <span class="au-checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>Lori Lynch</td>
-                                        <td>
-                                            <span class="block-email">doe@example.com</span>
-                                        </td>
-                                        <td class="desc">Camera C430W 4k</td>
-                                        <td>2018-09-24 19:10</td>
-                                        <td>
-                                            <span class="status--process">Processed</span>
-                                        </td>
-                                        <td>$699.00</td>
-                                        <td>
-                                            <div class="table-data-feature">
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Send">
-                                                    <i class="zmdi zmdi-mail-send"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Edit">
-                                                    <i class="zmdi zmdi-edit"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="Delete">
-                                                    <i class="zmdi zmdi-delete"></i>
-                                                </button>
-                                                <button class="item" data-toggle="tooltip" data-placement="top"
-                                                    title="More">
-                                                    <i class="zmdi zmdi-more"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
                         </div>
                     </div>
                 </div>
@@ -420,6 +268,26 @@
         </div>
     </footer>
     <!-- END COPYRIGHT-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="addsales" tabindex="-1" aria-labelledby="addsalesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addsalesLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

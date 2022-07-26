@@ -45,6 +45,31 @@
     <script src="{{asset('assets/js/scripts.js')}}"></script>
     <script src="{{asset('assets/js/custom.js')}}"></script>
 
+    <script>
+        function btnClick(text) {
+            const logUrl = document.getElementById('logUrl')
+            const btnText = document.getElementById('navbarDropdown');
+
+            btnText.innerHTML = text;
+            let type;
+            switch (text) {
+                case "ADMIN":
+                    type=1
+                    break;
+                case "SUPPLIER":
+                        type=2
+                    break;
+                default:
+                    type=3
+                    break;
+            }
+            logUrl.href = '/login?type='+type;
+            console.log(text);
+        }
+
+
+    </script>
+
     <!-- Page Specific JS File -->
 </body>
 

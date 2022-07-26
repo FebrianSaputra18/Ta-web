@@ -10,16 +10,8 @@
         </div>
 
         <div class="card card-primary">
-            <div class="card-header">
-                <span class="login100-form-title">
-                    @if ($type == 1)
-                    Admin
-                    @elseif($type == 2)
-                    Supplier
-                    @else
-                    Sales
-                    @endif Login
-                </span>
+            <div class="d-flex card-header justify-content-center">
+                <h4 class="title-register">Register</h4>
             </div>
 
             <div class="card-body">
@@ -68,15 +60,32 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="form-group col-12 p-0">
-                        <label for="address">Address</label>
-                        <textarea id="address" class="form-control @error('address') is-invalid @enderror" rows="5"
-                            name="address" autofocus>{{ old('address') }}</textarea>
-                        @error('address')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="address">Address</label>
+                            <textarea id="address" class="form-control @error('address') is-invalid @enderror" rows="5"
+                                name="address" autofocus>{{ old('address') }}</textarea>
+                            @error('address')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 nav-item dropdown">
+                            <label for="role">Role</label>
+                            <!-- Lang Dropdown Link -->
+                            <a class="border nav-link dropdown-toggle" for="role_id" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"
+                                value="{{ old('role_id') }}">PILIH</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" name="role_id">
+                                <div class="dropdown-item" href="/" onclick="btnClick('ADMIN')">ADMIN </div>
+                                <!-- Lang Dropdown Choice -->
+                                <div class="dropdown-item" href="#" onclick="btnClick('SUPPLIER')">SUPPLIER </div>
+                                <!-- Lang Dropdown Choice -->
+                                <div class="dropdown-item" href="#" onclick="btnClick('SALES')">SALES </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">

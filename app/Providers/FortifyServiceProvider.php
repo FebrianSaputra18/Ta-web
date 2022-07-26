@@ -35,9 +35,8 @@ class FortifyServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        Fortify::loginView(function (Request $request) {
-            $type = 1;
-            return view('auth.login', compact('type'));
+        Fortify::loginView(function () {
+            return view('auth.login');
         });
         Fortify::registerView(function () {
             return view('auth.register');
@@ -45,7 +44,7 @@ class FortifyServiceProvider extends ServiceProvider
 
         Fortify::authenticateUsing(function (Request $request) {
             $user = User::where('email', $request->email)
-                ->orWhere('username', $request->username)
+                ->orWhere('username', $request->email)
                 ->first();
 
             if (
@@ -70,5 +69,10 @@ class FortifyServiceProvider extends ServiceProvider
         RateLimiter::for('two-factor', function (Request $request) {
             return Limit::perMinute(5)->by($request->session()->get('login.id'));
         });
+    }
+
+    public function store(Request $request)
+    {
+        dd($request);
     }
 }

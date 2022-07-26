@@ -11,15 +11,7 @@
 
         <div class="card card-primary">
             <div class="card-header">
-                <span class="login100-form-title">
-                    @if ($type == 1)
-                    Admin
-                    @elseif($type == 2)
-                    Supplier
-                    @else
-                    Sales
-                    @endif Login
-                </span>
+                <a href="">Login.</a>
             </div>
 
             <div class="card-body">

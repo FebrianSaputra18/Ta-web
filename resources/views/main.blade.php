@@ -59,19 +59,6 @@
                 <div class="hero-btns">
                     <!-- Hero Btn First -->
                     <div class="d-flex justify-content-start">
-
-                        <div class="col-md-2 col-sm-6 nav-item dropdown">
-                            <!-- Lang Dropdown Link -->
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">PILIH</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="dropdown-item" href="#" onclick="btnClick('ADMIN')">ADMIN </div>
-                                <!-- Lang Dropdown Choice -->
-                                <div class="dropdown-item" href="#" onclick="btnClick('SUPPLIER')">SUPPLIER </div>
-                                <!-- Lang Dropdown Choice -->
-                                <div class="dropdown-item" href="#" onclick="btnClick('SALES')">SALES </div>
-                            </div>
-                        </div>
                         <!-- Hero Btn Second -->
                         <a data-scroll href="/login" id="logUrl">Masuk.</a>
                     </div>
@@ -402,31 +389,6 @@
     <script src="{{ asset('style/js/slick.min.js')}}"></script>
     <script src="{{ asset('style/js/smooth-scroll.min.js')}}"></script>
     <script src="{{ asset('style/js/main.js')}}"></script>
-
-    <script>
-        function btnClick(text) {
-            const logUrl = document.getElementById('logUrl')
-            const btnText = document.getElementById('navbarDropdown');
-
-            btnText.innerHTML = text;
-            let type;
-            switch (text) {
-                case "ADMIN":
-                    type=1
-                    break;
-                case "SUPPLIER":
-                        type=2
-                    break;
-                default:
-                    type=3
-                    break;
-            }
-            logUrl.href = '/login?type='+type;
-            console.log(text);
-        }
-
-
-    </script>
     <!-- Scripts Ends -->
 </body>
 
