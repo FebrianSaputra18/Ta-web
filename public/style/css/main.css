@@ -782,4 +782,1243 @@ footer h6 {
   }
 }
 
+/* ----- Statistic ----- */
+.statistic {
+  padding-top: 57px;
+}
 
+.statistic__item {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  padding: 20px 30px;
+  position: relative;
+  min-height: 180px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .statistic__item {
+      padding: 20px 10px;
+  }
+}
+
+.statistic__item h2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #4272d7;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .statistic__item h2 {
+      font-size: 22px;
+  }
+}
+
+.statistic__item .desc {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgba(128, 128, 128, 0.6);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .statistic__item .desc {
+      font-size: 13px;
+  }
+}
+
+.statistic__item .icon {
+  display: inline-block;
+  position: absolute;
+  bottom: -50px;
+  right: -7px;
+}
+
+.statistic__item .icon i {
+  font-size: 180px;
+  color: #808080;
+  opacity: .2;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+.statistic__item--green {
+  background: #00b26f;
+}
+
+.statistic__item--orange {
+  background: #ff8300;
+}
+
+.statistic__item--blue {
+  background: #00b5e9;
+}
+
+.statistic__item--red {
+  background: #fa4251;
+}
+
+/* ----- Statistic 2 ----- */
+.statistic2 {
+  padding-top: 50px;
+}
+
+.statistic2 .statistic__item {
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.statistic2 .statistic__item h2 {
+  color: #fff;
+}
+
+.statistic2 .statistic__item .desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----- Breadcrumb ----- */
+.au-breadcrumb {
+  height: 75px;
+  background: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 991px) {
+  .au-breadcrumb {
+      height: 130px;
+  }
+
+  .au-breadcrumb.m-t-75 {
+      margin-top: 0;
+  }
+}
+
+.au-breadcrumb .section__content {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.au-breadcrumb-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .au-breadcrumb-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+
+  .au-breadcrumb-content .au-breadcrumb-left {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+      -moz-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+  }
+
+  .au-breadcrumb-content > button {
+      margin-bottom: 15px;
+  }
+}
+
+.au-breadcrumb-span {
+  font-size: 14px;
+  color: #999;
+  display: inline-block;
+}
+
+.au-breadcrumb__list {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.au-breadcrumb__list li {
+  font-size: 14px;
+  color: #999;
+}
+
+.au-breadcrumb__list .list-inline-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.au-breadcrumb__list .active a {
+  color: #999;
+}
+
+.au-breadcrumb__list .active a:hover {
+  color: #333;
+}
+
+.au-breadcrumb2 {
+  padding-top: 48px;
+  padding-bottom: 50px;
+}
+
+.au-breadcrumb2 .au-breadcrumb-span {
+  color: #808080;
+}
+
+.au-breadcrumb2 .au-breadcrumb__list .active a {
+  color: #808080;
+}
+
+.au-breadcrumb2 .au-breadcrumb__list .active a:hover {
+  color: #666;
+}
+
+.au-breadcrumb2 .au-breadcrumb__list li {
+  color: #808080;
+}
+
+@media (max-width: 991px) {
+  .au-breadcrumb2 .au-breadcrumb-left {
+      margin-top: 20px;
+  }
+}
+
+.au-breadcrumb3 .au-breadcrumb__list .active a:hover {
+  color: #ccc;
+}
+
+.line-seprate {
+  height: 1px;
+  width: 100%;
+  background: #e5e5e5;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.welcome2 {
+  background: #393939;
+}
+
+.welcome2-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.welcome2-inner .welcome2-greeting {
+  width: -webkit-calc(100% - 500px);
+  width: -moz-calc(100% - 500px);
+  width: calc(100% - 500px);
+}
+
+.welcome2-inner form {
+  height: 45px;
+}
+
+@media (max-width: 991px) {
+  .welcome2-inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+      -moz-box-orient: vertical;
+      -moz-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  }
+
+  .welcome2-inner.m-t-60 {
+      margin-top: 0;
+  }
+
+  .welcome2-inner .welcome2-greeting {
+      width: 100%;
+  }
+
+  .welcome2-inner form {
+      margin-bottom: 30px;
+      margin-top: 30px;
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+  }
+}
+
+.welcome2-greeting h1 {
+  margin-bottom: 12px;
+}
+
+.welcome2-greeting p {
+  font-size: 14px;
+  color: #808080;
+}
+
+/* ----- Progress ----- */
+.au-progress .au-progress__bar {
+  height: 10px;
+  position: relative;
+  background: #d9d9d9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.au-progress .au-progress__bar .au-progress__inner {
+  position: absolute;
+  width: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  background-color: #4272d7;
+  overflow: visible;
+}
+
+.au-progress__title {
+  font-size: 14px;
+  color: #808080;
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.au-progress__value {
+  font-size: 14px;
+  color: #808080;
+  position: absolute;
+  top: -28px;
+  right: -15px;
+}
+
+/* ----- Alert ----- */
+.au-alert {
+  border: 1px solid #fff;
+  background: #fff;
+  border-left: 3px solid #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 0;
+  padding: 15px 30px;
+}
+
+.au-alert.alert-dismissible .close {
+  font-size: 16px;
+  color: black;
+  opacity: 0.2;
+  padding: 0 23px;
+  top: 0;
+  bottom: 0;
+}
+
+.au-alert > i {
+  font-size: 30px;
+  color: #00ad5f;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.au-alert .content {
+  font-size: 16px;
+  color: #808080;
+}
+
+.au-alert-success {
+  background: #e5f6eb;
+  border-color: #d9f1e3;
+  border-left-color: #00ad5f;
+}
+
+.au-alert--70per {
+  width: 70.5%;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .au-alert--70per {
+      width: 95%;
+  }
+}
+
+/* Switch */
+.switch.switch-default {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.switch.switch-default .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch.switch-default .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: opacity background .15s ease-out;
+  -o-transition: opacity background .15s ease-out;
+  -moz-transition: opacity background .15s ease-out;
+  transition: opacity background .15s ease-out;
+}
+
+.switch.switch-default .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+.switch.switch-default .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+.switch.switch-default .switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-transition: left .15s ease-out;
+  -o-transition: left .15s ease-out;
+  -moz-transition: left .15s ease-out;
+  transition: left .15s ease-out;
+}
+
+.switch.switch-default .switch-input:checked ~ .switch-handle {
+  left: 18px;
+}
+
+.switch.switch-default.switch-lg {
+  width: 48px;
+  height: 28px;
+}
+
+.switch.switch-default.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+.switch.switch-default.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+.switch.switch-default.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+.switch.switch-default.switch-sm {
+  width: 32px;
+  height: 20px;
+}
+
+.switch.switch-default.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+.switch.switch-default.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+.switch.switch-default.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 14px;
+}
+
+.switch.switch-default.switch-xs {
+  width: 24px;
+  height: 16px;
+}
+
+.switch.switch-default.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+.switch.switch-default.switch-xs .switch-handle {
+  width: 12px;
+  height: 12px;
+}
+
+.switch.switch-default.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 10px;
+}
+
+.switch.switch-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.switch.switch-text .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch.switch-text .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: opacity background .15s ease-out;
+  -o-transition: opacity background .15s ease-out;
+  -moz-transition: opacity background .15s ease-out;
+  transition: opacity background .15s ease-out;
+}
+
+.switch.switch-text .switch-label::before,
+.switch.switch-text .switch-label::after {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  -moz-transition: inherit;
+  transition: inherit;
+}
+
+.switch.switch-text .switch-label::before {
+  right: 1px;
+  color: #e9ecef;
+  content: attr(data-off);
+}
+
+.switch.switch-text .switch-label::after {
+  left: 1px;
+  color: #fff;
+  content: attr(data-on);
+  opacity: 0;
+}
+
+.switch.switch-text .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+.switch.switch-text .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+.switch.switch-text .switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-transition: left .15s ease-out;
+  -o-transition: left .15s ease-out;
+  -moz-transition: left .15s ease-out;
+  transition: left .15s ease-out;
+}
+
+.switch.switch-text .switch-input:checked ~ .switch-handle {
+  left: 26px;
+}
+
+.switch.switch-text.switch-lg {
+  width: 56px;
+  height: 28px;
+}
+
+.switch.switch-text.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+.switch.switch-text.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+.switch.switch-text.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 30px;
+}
+
+.switch.switch-text.switch-sm {
+  width: 40px;
+  height: 20px;
+}
+
+.switch.switch-text.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+.switch.switch-text.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+.switch.switch-text.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+.switch.switch-text.switch-xs {
+  width: 32px;
+  height: 16px;
+}
+
+.switch.switch-text.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+.switch.switch-text.switch-xs .switch-handle {
+  width: 12px;
+  height: 12px;
+}
+
+.switch.switch-text.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 18px;
+}
+
+.switch.switch-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.switch.switch-icon .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch.switch-icon .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-family: FontAwesome;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: opacity background .15s ease-out;
+  -o-transition: opacity background .15s ease-out;
+  -moz-transition: opacity background .15s ease-out;
+  transition: opacity background .15s ease-out;
+}
+
+.switch.switch-icon .switch-label::before,
+.switch.switch-icon .switch-label::after {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  -moz-transition: inherit;
+  transition: inherit;
+}
+
+.switch.switch-icon .switch-label::before {
+  right: 1px;
+  color: #e9ecef;
+  content: attr(data-off);
+}
+
+.switch.switch-icon .switch-label::after {
+  left: 1px;
+  color: #fff;
+  content: attr(data-on);
+  opacity: 0;
+}
+
+.switch.switch-icon .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+.switch.switch-icon .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+.switch.switch-icon .switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-transition: left .15s ease-out;
+  -o-transition: left .15s ease-out;
+  -moz-transition: left .15s ease-out;
+  transition: left .15s ease-out;
+}
+
+.switch.switch-icon .switch-input:checked ~ .switch-handle {
+  left: 26px;
+}
+
+.switch.switch-icon.switch-lg {
+  width: 56px;
+  height: 28px;
+}
+
+.switch.switch-icon.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+.switch.switch-icon.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+.switch.switch-icon.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 30px;
+}
+
+.switch.switch-icon.switch-sm {
+  width: 40px;
+  height: 20px;
+}
+
+.switch.switch-icon.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+.switch.switch-icon.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+.switch.switch-icon.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+.switch.switch-icon.switch-xs {
+  width: 32px;
+  height: 16px;
+}
+
+.switch.switch-icon.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+.switch.switch-icon.switch-xs .switch-handle {
+  width: 12px;
+  height: 12px;
+}
+
+.switch.switch-icon.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 18px;
+}
+
+.switch.switch-3d {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.switch.switch-3d .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch.switch-3d .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f8f9fa;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: opacity background .15s ease-out;
+  -o-transition: opacity background .15s ease-out;
+  -moz-transition: opacity background .15s ease-out;
+  transition: opacity background .15s ease-out;
+}
+
+.switch.switch-3d .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+.switch.switch-3d .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+.switch.switch-3d .switch-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-transition: left .15s ease-out;
+  -o-transition: left .15s ease-out;
+  -moz-transition: left .15s ease-out;
+  transition: left .15s ease-out;
+  border: 0;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.switch.switch-3d .switch-input:checked ~ .switch-handle {
+  left: 16px;
+}
+
+.switch.switch-3d.switch-lg {
+  width: 48px;
+  height: 28px;
+}
+
+.switch.switch-3d.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+.switch.switch-3d.switch-lg .switch-handle {
+  width: 28px;
+  height: 28px;
+}
+
+.switch.switch-3d.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 20px;
+}
+
+.switch.switch-3d.switch-sm {
+  width: 32px;
+  height: 20px;
+}
+
+.switch.switch-3d.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+.switch.switch-3d.switch-sm .switch-handle {
+  width: 20px;
+  height: 20px;
+}
+
+.switch.switch-3d.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 12px;
+}
+
+.switch.switch-3d.switch-xs {
+  width: 24px;
+  height: 16px;
+}
+
+.switch.switch-3d.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+.switch.switch-3d.switch-xs .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+.switch.switch-3d.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 8px;
+}
+
+.switch-pill .switch-label, .switch.switch-3d .switch-label,
+.switch-pill .switch-handle,
+.switch.switch-3d .switch-handle {
+  -webkit-border-radius: 50em !important;
+  -moz-border-radius: 50em !important;
+  border-radius: 50em !important;
+}
+
+.switch-pill .switch-label::before, .switch.switch-3d .switch-label::before {
+  right: 2px !important;
+}
+
+.switch-pill .switch-label::after, .switch.switch-3d .switch-label::after {
+  left: 2px !important;
+}
+
+.switch-primary > .switch-input:checked ~ .switch-label {
+  background: #4272d7 !important;
+  border-color: #2858be;
+}
+
+.switch-primary > .switch-input:checked ~ .switch-handle {
+  border-color: #2858be;
+}
+
+.switch-primary-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #4272d7;
+}
+
+.switch-primary-outline > .switch-input:checked ~ .switch-label::after {
+  color: #4272d7;
+}
+
+.switch-primary-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #4272d7;
+}
+
+.switch-primary-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #4272d7;
+}
+
+.switch-primary-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #4272d7;
+}
+
+.switch-primary-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #4272d7 !important;
+  border-color: #4272d7;
+}
+
+.switch-secondary > .switch-input:checked ~ .switch-label {
+  background: #868e96 !important;
+  border-color: #6c757d;
+}
+
+.switch-secondary > .switch-input:checked ~ .switch-handle {
+  border-color: #6c757d;
+}
+
+.switch-secondary-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #868e96;
+}
+
+.switch-secondary-outline > .switch-input:checked ~ .switch-label::after {
+  color: #868e96;
+}
+
+.switch-secondary-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #868e96;
+}
+
+.switch-secondary-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #868e96;
+}
+
+.switch-secondary-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #868e96;
+}
+
+.switch-secondary-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #868e96 !important;
+  border-color: #868e96;
+}
+
+.switch-success > .switch-input:checked ~ .switch-label {
+  background: #28a745 !important;
+  border-color: #1e7e34;
+}
+
+.switch-success > .switch-input:checked ~ .switch-handle {
+  border-color: #1e7e34;
+}
+
+.switch-success-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #28a745;
+}
+
+.switch-success-outline > .switch-input:checked ~ .switch-label::after {
+  color: #28a745;
+}
+
+.switch-success-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #28a745;
+}
+
+.switch-success-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #28a745;
+}
+
+.switch-success-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #28a745;
+}
+
+.switch-success-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #28a745 !important;
+  border-color: #28a745;
+}
+
+.switch-info > .switch-input:checked ~ .switch-label {
+  background: #17a2b8 !important;
+  border-color: #117a8b;
+}
+
+.switch-info > .switch-input:checked ~ .switch-handle {
+  border-color: #117a8b;
+}
+
+.switch-info-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #17a2b8;
+}
+
+.switch-info-outline > .switch-input:checked ~ .switch-label::after {
+  color: #17a2b8;
+}
+
+.switch-info-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #17a2b8;
+}
+
+.switch-info-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #17a2b8;
+}
+
+.switch-info-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #17a2b8;
+}
+
+.switch-info-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #17a2b8 !important;
+  border-color: #17a2b8;
+}
+
+.switch-warning > .switch-input:checked ~ .switch-label {
+  background: #ffc107 !important;
+  border-color: #d39e00;
+}
+
+.switch-warning > .switch-input:checked ~ .switch-handle {
+  border-color: #d39e00;
+}
+
+.switch-warning-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #ffc107;
+}
+
+.switch-warning-outline > .switch-input:checked ~ .switch-label::after {
+  color: #ffc107;
+}
+
+.switch-warning-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #ffc107;
+}
+
+.switch-warning-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #ffc107;
+}
+
+.switch-warning-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #ffc107;
+}
+
+.switch-warning-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #ffc107 !important;
+  border-color: #ffc107;
+}
+
+.switch-danger > .switch-input:checked ~ .switch-label {
+  background: #ff4b5a !important;
+  border-color: #ff182b;
+}
+
+.switch-danger > .switch-input:checked ~ .switch-handle {
+  border-color: #ff182b;
+}
+
+.switch-danger-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #ff4b5a;
+}
+
+.switch-danger-outline > .switch-input:checked ~ .switch-label::after {
+  color: #ff4b5a;
+}
+
+.switch-danger-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #ff4b5a;
+}
+
+.switch-danger-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #ff4b5a;
+}
+
+.switch-danger-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #ff4b5a;
+}
+
+.switch-danger-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #ff4b5a !important;
+  border-color: #ff4b5a;
+}
+
+.switch-light > .switch-input:checked ~ .switch-label {
+  background: #f8f9fa !important;
+  border-color: #dae0e5;
+}
+
+.switch-light > .switch-input:checked ~ .switch-handle {
+  border-color: #dae0e5;
+}
+
+.switch-light-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #f8f9fa;
+}
+
+.switch-light-outline > .switch-input:checked ~ .switch-label::after {
+  color: #f8f9fa;
+}
+
+.switch-light-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #f8f9fa;
+}
+
+.switch-light-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #f8f9fa;
+}
+
+.switch-light-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #f8f9fa;
+}
+
+.switch-light-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #f8f9fa !important;
+  border-color: #f8f9fa;
+}
+
+.switch-dark > .switch-input:checked ~ .switch-label {
+  background: #343a40 !important;
+  border-color: #1d2124;
+}
+
+.switch-dark > .switch-input:checked ~ .switch-handle {
+  border-color: #1d2124;
+}
+
+.switch-dark-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #343a40;
+}
+
+.switch-dark-outline > .switch-input:checked ~ .switch-label::after {
+  color: #343a40;
+}
+
+.switch-dark-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #343a40;
+}
+
+.switch-dark-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #343a40;
+}
+
+.switch-dark-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #343a40;
+}
+
+.switch-dark-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #343a40 !important;
+  border-color: #343a40;
+}

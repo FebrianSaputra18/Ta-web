@@ -26,10 +26,14 @@ Route::get('/', function () {
 //     return view('auth.login', compact('type'));
 // });
 
-Route::get('dashboard', function () {
-    return view('dashboard');
-});
-
 Route::get('admin-dashboard', function () {
     return view('dashboardadmin');
+});
+
+Route::get('sales-dashboard', function () {
+    return view('dashboardsales');
+});
+
+Route::get('supplier-dashboard', function () {
+    return view('dashboardsupplier');
 });

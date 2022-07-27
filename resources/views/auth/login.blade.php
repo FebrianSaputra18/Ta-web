@@ -3,73 +3,32 @@
 @section('title', 'LOGIN')
 
 @section('content')
-<div class="row">
-    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-        <div class="login-brand">
-            <img src="{{ asset ('style/images/bg_title.png')}}" alt="">
-        </div>
-
-        <div class="card card-primary">
-            <div class="card-header">
-                <a href="">Login.</a>
-            </div>
-
-            <div class="card-body">
-                @if (request()->session()->has('status'))
-                <div class="alert alert-danger">
-                    {{ request()->session()->get('status') }}
+<div class="container mt-5 ">
+    <div class="card mb-3">
+        <img src="{{ asset ('style/images/bg_title.png')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="col-md-7 col-sm-12">
+                <div class="header">
+                    <h5 class="title-header">Login dulu.</h5>
                 </div>
-                @endif
-                <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate=""
-                    autocomplete="off">
-                    @csrf
-                    <div class="form-group">
-                        <label for="email">Username or Email</label>
-                        <input id="email" type="text" class="form-control @error('email') is-invalid @enderror"
-                            name="email" tabindex="1" value="{{ old('email') ?? 'admin@gmail.com'}}" required autofocus>
-                        @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                    </div>
-
-                    <div class="form-group">
-                        <div class="d-block">
-                            <label for="password" class="control-label">Password</label>
-                            <div class="float-right">
-                                <a href="auth-forgot-password.html" class="text-small">
-                                    Forgot Password?
-                                </a>
-                            </div>
-                        </div>
-                        <input id="password" type="password" class="form-control @error('email') is-invalid @enderror"
-                            name="password" value="12345678" tabindex="2" required>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="remember" class="custom-control-input" tabindex="3"
-                                id="remember-me">
-                            <label class="custom-control-label" for="remember-me">Remember Me</label>
+                <form>
+                    <div class="row mb-3">
+                        <label for="username" class="col-sm-2 col-form-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="username" class="form-control" id="username">
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                            Login
-                        </button>
+                    <div class="row mb-3">
+                        <label for="password" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password">
+                        </div>
                     </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
                 </form>
-
             </div>
-        </div>
-        <div class="mt-5 text-muted text-center">
-            Don't have an account? <a href="{{ route('register') }}">Create One</a>
-        </div>
-        <div class="simple-footer">
-            Copyright &copy; UD-MAHMUDA {{ date('Y') }}
         </div>
     </div>
+</div>
 </div>
 @endsection
